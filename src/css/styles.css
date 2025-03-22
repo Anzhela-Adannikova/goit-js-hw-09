@@ -1,3 +1,5 @@
+/* 1-gallery */
+
 body {
   display: flex;
   justify-content: center; 
@@ -33,7 +35,12 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+    width: 376px;
+    height: 208px;
 }
 
 .gallery-item:hover {
@@ -44,7 +51,62 @@ body {
   transform: scale(1.044); 
 }
 
-.gallery:hover {
-  max-width: calc(3 * 376px + 2 * 16px);
-  gap: 20px;
+.sl-overlay {  
+  background-color: #2E2F42 !important;
+}  
+
+/* 2-form */
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: #ffffff;
+  margin: auto;
+}
+
+.form-label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.form-email {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.form-message {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+}
+.form-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  background: #4e75ff;
+  color: #ffffff;
+}
+
+.form-label:hover,
+.form-label:hover {
+  border: #000000;
+}
+
+.form-btn:hover {
+  background-color: #6c8cff;
 }
